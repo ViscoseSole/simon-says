@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Simon Says</title>
+  <link rel="stylesheet" href="./css/simon.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>  
+	<!-- CONTROLLER -->
+	<div class="controller">
+	  <button id="start">START</button>
+	  <div class="vertical-line"><span>PRESS START TO BEGIN!</span></div>
+	</div>
+
+	<!-- GRID -->
+	<div class="grid"> 
+	  <div id="green" class="colors" onclick='playAudio(this.id)'></div>
+		<div id="red" class="colors" onclick='playAudio(this.id)'></div>
+		<div id="yellow" class="colors" onclick='playAudio(this.id)'></div>
+		<div id="blue" class="colors" onclick='playAudio(this.id)'></div>
+	</div>
+
+	<!-- AUDIO INITIALIZATION -->
+	<audio id="audioG" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+	<audio id="audioR" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+	<audio id="audioY" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+	<audio id="audioB" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+
+  <script src="./js/simon.js"></script>
+</body>
+</html>
